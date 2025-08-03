@@ -1,4 +1,5 @@
 package tutedude;
+import java.util.*;
 /*Question 1:
 Write a Java program to demonstrate the usage of return types and arguments. 
 Create a method that takes two integers as arguments and returns their sum. 
@@ -14,7 +15,13 @@ public class assignment2 {
 	}
 	public static void main(String[] args) {
 		//assignment2 a=new assignment2();
-	System.out.println("the sum of the number is"+sum(10,20));
+		Scanner input= new Scanner(System.in);
+		System.out.println("Enter the first number");
+		int a= input.nextInt();
+		System.out.println("Enter the second number");
+		int b= input.nextInt();
+	System.out.println("the sum of the number is "+sum(a,b));
+	input.close();
 	}
 	}
 
